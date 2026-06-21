@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Tüm elemanları yatayda merkeze çeker */
+  max-width: 800px;
+  margin: 0 auto; /* Sayfayı tam ortalar */
+  padding: 40px 20px;
+}
+
+.title {
+  margin-bottom: 24px;
+}
