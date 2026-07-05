@@ -2,7 +2,9 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // ÖNEMLİ: Kendi MockAPI proje URL'ni buraya yapıştır!
-axios.defaults.baseURL = "https://6a3814c4c105017aa639a282.mockapi.io";
+//axios.defaults.baseURL = "https://6a3814c4c105017aa639a282.mockapi.io";
+
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL; // .env dosyası oluşturuldu
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
